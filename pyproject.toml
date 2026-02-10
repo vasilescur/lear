@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools >= 68.0", "setuptools-scm"]
+requires = ["setuptools >= 68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "lear"
-version = "1.0.1"
+version = "1.0.2"
 description = "Mistyped 'clear'? Enjoy King Lear instead."
 readme = "README.md"
 license = "MIT"
@@ -28,6 +28,9 @@ Issues = "https://github.com/vasilescur/lear/issues"
 
 [project.scripts]
 lear = "lear.cli:main"
+
+[tool.setuptools]
+packages = ["lear"]
 
 [tool.setuptools.package-data]
 lear = ["king_lear.txt"]
