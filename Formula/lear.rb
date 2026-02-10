@@ -7,7 +7,7 @@ class Lear < Formula
   sha256 "dcd18366e94407c9983a2e123de5f3707cb6c7446daba67488b9d292482c1524"
   license "MIT"
 
-  depends_on "python@3"
+  depends_on "python@3.13"
 
   def install
     virtualenv_install_with_resources
