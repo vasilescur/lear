@@ -3,14 +3,15 @@ class Lear < Formula
 
   desc "Mistyped 'clear'? Enjoy King Lear instead"
   homepage "https://github.com/vasilescur/lear"
-  url "https://github.com/vasilescur/lear/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "4aa230367173754f0f8a4bb179e526db65b2172796316a3abb722e7d8ce9d936"
+  url "https://github.com/vasilescur/lear/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "eee85b6d43d411f7a6381bd31a3d6148ef50053daee1efc07e6cc83ead91bd6b"
   license "MIT"
 
   depends_on "python@3.13"
 
   def install
     virtualenv_install_with_resources
+    man1.install "lear.1"
   end
 
   def caveats
