@@ -2,7 +2,7 @@
 
 Mistyped `clear`? Enjoy King Lear instead.
 
-<img width="1796" height="1496" alt="image" src="https://github.com/user-attachments/assets/091b8582-afab-49d8-a1f7-1cc5e3e01ed1" />
+<img width="1884" height="1584" alt="image" src="https://github.com/user-attachments/assets/c18fd0eb-ad51-4a6f-a310-da29ceb08823" />
 
 `lear` is a joke CLI in the tradition of [`sl`](https://github.com/mtoyoda/sl) (steam locomotive for mistyping `ls`). When you accidentally type `lear` instead of `clear`, your terminal spits out the text of Shakespeare's *King Lear*.
 
