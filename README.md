@@ -52,7 +52,7 @@ lear -f ~/my_text.txt
 
 ## Star History
 
-You could help make this line go up! [Star the repo](https://github.com/vasilescur/lear/stargazers)
+You could help make this line go up!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=vasilescur/lear&type=Date)](https://star-history.com/#vasilescur/lear&Date)
 
