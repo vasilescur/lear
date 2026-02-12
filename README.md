@@ -2,17 +2,7 @@
 
 Mistyped `clear`? Enjoy King Lear instead.
 
-```
-$ lear
-ACT I
-
-SCENE I. A Room of State in King Lear's Palace
-
- Enter Kent, Gloucester and Edmund.
-
-KENT.
-I thought the King had more affected the Duke of Albany than Cornwall...
-```
+<img width="1796" height="1496" alt="image" src="https://github.com/user-attachments/assets/091b8582-afab-49d8-a1f7-1cc5e3e01ed1" />
 
 `lear` is a joke CLI in the tradition of [`sl`](https://github.com/mtoyoda/sl) (steam locomotive for mistyping `ls`). When you accidentally type `lear` instead of `clear`, your terminal spits out the text of Shakespeare's *King Lear*.
 
