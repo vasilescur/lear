@@ -42,7 +42,7 @@ pip install git+https://github.com/vasilescur/lear.git
 ## Usage
 
 ```
-usage: lear [-h] [-v] [-d MS] [-m MS]
+usage: lear [-h] [-v] [-d MS] [-m MS] [-f PATH]
 
 Mistyped 'clear'? Enjoy King Lear instead.
 
@@ -51,6 +51,13 @@ options:
   -v, --version          show program's version number and exit
   -d MS, --delay MS      base per-character delay in ms (default: 15)
   -m MS, --max-delay MS  maximum per-character delay in ms (default: 100)
+  -f PATH, --file PATH   path to a custom text file to stream (default: King Lear)
+```
+
+Stream your own text file instead of King Lear:
+
+```bash
+lear -f ~/my_text.txt
 ```
 
 ## License

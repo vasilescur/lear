@@ -56,10 +56,25 @@ def main():
         metavar="MS",
         help=f"maximum per-character delay in ms (default: {DEFAULT_MAX_DELAY})",
     )
+    parser.add_argument(
+        "-f",
+        "--file",
+        type=str,
+        default=None,
+        metavar="PATH",
+        help="path to a custom text file to stream (default: King Lear)",
+    )
     args = parser.parse_args()
 
-    text_file = resources.files("lear").joinpath("king_lear.txt")
-    content = text_file.read_text(encoding="utf-8")
+    if args.file:
+        try:
+            with open(args.file, encoding="utf-8") as fh:
+                content = fh.read()
+        except FileNotFoundError:
+            parser.error(f"file not found: {args.file}")
+    else:
+        text_file = resources.files("lear").joinpath("king_lear.txt")
+        content = text_file.read_text(encoding="utf-8")
 
     try:
         for char in content:
