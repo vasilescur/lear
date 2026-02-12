@@ -3,8 +3,8 @@ class Lear < Formula
 
   desc "Mistyped 'clear'? Enjoy King Lear instead"
   homepage "https://github.com/vasilescur/lear"
-  url "https://github.com/vasilescur/lear/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "e47532bbee7f01626c6944dbf4efaae58d86c285411ab85d9b3b88d24d70520a"
+  url "https://github.com/vasilescur/lear/archive/refs/tags/v1.0.3.tar.gz"
+  sha256 "4aa230367173754f0f8a4bb179e526db65b2172796316a3abb722e7d8ce9d936"
   license "MIT"
 
   depends_on "python@3.13"
