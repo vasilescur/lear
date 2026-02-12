@@ -1,0 +1,102 @@
+.TH LEAR 1 "2026-02-11" "lear 1.0.3" "User Commands"
+.SH NAME
+lear \- mistyped \(aqclear\(aq? Enjoy King Lear instead.
+.SH SYNOPSIS
+.B lear
+.RB [ \-h ]
+.RB [ \-v ]
+.RB [ \-d
+.IR MS ]
+.RB [ \-m
+.IR MS ]
+.RB [ \-f
+.IR PATH ]
+.SH DESCRIPTION
+.B lear
+is a humorous CLI tool in the spirit of
+.BR sl (1).
+When you mistype
+.B clear
+as
+.BR lear ,
+it streams the full text of Shakespeare's
+.I King Lear
+to your terminal character\-by\-character with realistic typing delays.
+.PP
+The typing simulation uses weighted random branching: ~15% of characters
+appear instantly (burst typing), ~77% use a Gaussian delay around the base
+value (normal typing), and ~8% have a longer uniform random pause
+(thinking hesitation).
+.PP
+Press
+.B Ctrl\-C
+at any time to stop the performance.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Show a help message and exit.
+.TP
+.BR \-v ", " \-\-version
+Print the version number and exit.
+.TP
+.BR \-d ", " \-\-delay " " \fIMS\fR
+Base per\-character delay in milliseconds.
+Default: 15.
+.TP
+.BR \-m ", " \-\-max\-delay " " \fIMS\fR
+Maximum per\-character delay in milliseconds, used for the occasional
+"thinking pause" hesitations.
+Default: 100.
+.TP
+.BR \-f ", " \-\-file " " \fIPATH\fR
+Path to a custom text file to stream instead of King Lear.
+.SH EXAMPLES
+Run with default settings:
+.PP
+.RS
+.nf
+$ lear
+.fi
+.RE
+.PP
+Slow, dramatic reading:
+.PP
+.RS
+.nf
+$ lear \-d 40 \-m 200
+.fi
+.RE
+.PP
+Speed run through the whole play:
+.PP
+.RS
+.nf
+$ lear \-d 2 \-m 10
+.fi
+.RE
+.PP
+Stream your own text file:
+.PP
+.RS
+.nf
+$ lear \-f hamlet.txt
+.fi
+.RE
+.SH EXIT STATUS
+.TP
+.B 0
+Successful completion (text fully streamed or interrupted with Ctrl\-C).
+.TP
+.B 2
+Invalid command\-line arguments.
+.SH BUGS
+This is not a bug; it is a feature.
+You meant to type
+.BR clear .
+.PP
+Report issues at <https://github.com/vasilescur/lear/issues>.
+.SH AUTHOR
+Radu Vasilescu
+.SH SEE ALSO
+.BR sl (1),
+.BR clear (1)
