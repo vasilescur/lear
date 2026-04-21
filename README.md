@@ -50,12 +50,6 @@ Stream your own text file instead of King Lear:
 lear -f ~/my_text.txt
 ```
 
-## Star History
-
-You could help make this line go up!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vasilescur/lear&type=Date)](https://star-history.com/#vasilescur/lear&Date)
-
 ## License
 
 MIT
